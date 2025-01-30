@@ -13,10 +13,29 @@ span, p {
 
 /** Hero **/
 
+#hero{
+    justify-content: center;
+    /*margin-top: 2rem;
+    margin-bottom: 2rem;*/
+}
+
+.gallery{
+    gap: 0.25rem;
+}
+
 .mainImage, .otherImages {
     overflow: hidden;
+    padding: 0;
 }
 
 .otherImages{
+    display: flex;
     flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.otherImages img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
 }
