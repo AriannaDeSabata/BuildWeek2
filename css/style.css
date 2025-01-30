@@ -49,3 +49,31 @@ a{
 
 
 /*colore Airbnb---> #E41D56 */
+
+
+
+
+
+ 
+footer p{
+    margin: 0;
+}
+
+footer ul{
+    padding: 0;
+}
+footer li{
+    list-style: none;
+    font-size: 0.7em;
+    line-height: 2em;
+}
+
+footer li:first-child{
+font-weight: bold;
+}
+
+footer div.row div.col-9{
+    padding: 15px 0;
+    border-top: 1px solid #aaaaaa;
+}
+
