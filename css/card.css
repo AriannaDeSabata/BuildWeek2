@@ -1,0 +1,76 @@
+body {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+    background-color: #fafafa;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+    border: none;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: white;
+}
+
+.like {
+    padding: 10px;
+    /* Aggiunge spazio attorno al pulsante */
+    cursor: pointer;
+    /* Assicura un'area cliccabile chiara */
+    z-index: 2;
+    /* Assicura che sia sopra gli altri elementi */
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 50px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 24px;
+    display: block;
+    background-repeat: no-repeat;
+    height: 24px;
+    background-position: 50%;
+    background-size: 100% 100%;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 6px solid #fff;
+}
+/* modifica al colore immagine svg freccia destra */
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+/* modifica al colore immagine svg freccia sinistra */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}

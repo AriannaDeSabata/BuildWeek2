@@ -1,6 +1,6 @@
 
 
-    
+    /*
     // JSON con i dati degli appartamenti
     const apartments = [
         {
@@ -191,7 +191,8 @@
 
     // Renderizza gli appartamenti
     renderApartments(apartments);
-
+    */
+   
     //Funzione per cambiare d-none ai cuori presenti nel div con classe like
     document.addEventListener("DOMContentLoaded", function () {
         // Seleziona tutti i div con classe "like"
