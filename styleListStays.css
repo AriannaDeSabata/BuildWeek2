@@ -1,70 +1,103 @@
 
 
 #staysIn p, #staysIn ul, #staysIn h2   {
-   margin: 0;
-}
-
-
-#staysIn .bi, #listStays .bi{
-    color: #E41D56;
-    font-size: 1.5em;
-}
-#staysIn ul{
-    gap: 10px;
-    padding: 0;
-}
-
-#staysIn li{
-    list-style: none;
-    border: 1px solid #898989;
-    padding: 3px 10px;
-    border-radius: 20px;
-    font-size: 0.8em;
-}
-
-#listStays .card{
-    border: none;
-}
-
-
-#listStays img{
-    border-radius: 20px ;
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-
-}
-
-
-#listStays .bi{
-    font-size: 0.75em;
-}
-
-#listStays .vote{
-    font-weight: bold;
-}
-
-#listStays .card-body{
-    padding-top: 2px;
-    padding-left: 0;
-}
-
-
-@media screen and (min-width:1023px){
-
-    #listStays .card{
-        width: 163px;
-    
-    }
-}
-@media screen and (min-width:1440px){
-    #listStays .row >div{
-        display: flex;
-        justify-content: center;
-    }
-    #listStays .card{
-        width: 230px;
-    
-    }
-
-}
+    margin: 0;
+ }
+ 
+ 
+ #staysIn .bi, #listStays .bi{
+     color: #E41D56;
+     font-size: 1.5em;
+ }
+ #staysIn ul{
+     gap: 10px;
+     padding: 0;
+ }
+ 
+ #staysIn li{
+     list-style: none;
+     border: 1px solid #898989;
+     padding: 3px 10px;
+     border-radius: 20px;
+     font-size: 0.8em;
+ }
+ 
+ #listStays .card{
+     border: none;
+ }
+ 
+ 
+ #listStays img{
+     border-radius: 10px ;
+     width: 100%;
+     height: 150px;
+     object-fit: cover;
+ 
+ }
+ 
+ 
+ #listStays .bi{
+     font-size: 0.75em;
+ }
+ 
+ #listStays .vote{
+     font-weight: bold;
+ }
+ 
+ #listStays .card-body{
+     padding-top: 2px;
+     padding-left: 0;
+ }
+ 
+ 
+ @media screen and (min-width:1023px){
+ 
+     #listStays .card{
+         width: 163px;
+     
+     }
+ }
+ @media screen and (min-width:1440px){
+     #listStays .row >div{
+         display: flex;
+         justify-content: center;
+     }
+     #listStays .card{
+         width: 230px;
+     
+     }
+ 
+ }
+ 
+ 
+ footer{
+     background-color: #F7F7F7;
+     border-top: 1px solid #7a7a7a83;
+     margin-top: 100vh; 
+ }
+ 
+ 
+ 
+ footer p{
+     margin: 0;
+ }
+ 
+ footer ul{
+     padding: 0;
+ }
+ footer li{
+     list-style: none;
+     font-size: 0.7em;
+     line-height: 2em;
+ }
+ 
+ footer li:first-child{
+ font-weight: bold;
+ }
+ 
+ footer div.row div.col-9{
+     padding: 15px 0;
+     border-top: 1px solid #aaaaaa;
+ }
+ 
+ 
