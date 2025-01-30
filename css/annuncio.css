@@ -1,0 +1,22 @@
+
+main{
+    background-color: lavender;
+}
+
+/*Design System */
+
+
+span, p {
+    font-size: 0.875rem;
+}
+
+
+/** Hero **/
+
+.mainImage, .otherImages {
+    overflow: hidden;
+}
+
+.otherImages{
+    flex-wrap: wrap;
+}
