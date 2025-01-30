@@ -46,7 +46,18 @@ span, p {
 
 /** Description Box **/
 
+.descriptionFeatures{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
 .descriptionItem{
     align-items: center;
     gap: 1rem;
+}
+
+.descriptionItem i{
+    font-size: 1.3rem;
 }
