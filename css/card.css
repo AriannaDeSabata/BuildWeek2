@@ -24,7 +24,7 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
+/* indicatori in fondo alla card */
 .carousel-indicators [data-bs-target] {
     width: 10px;
     height: 10px;
@@ -40,6 +40,10 @@ body {
     background-color: white;
 }
 
+.heart-transparent {
+     
+    
+}
 .like {
     padding: 10px;
     /* Aggiunge spazio attorno al pulsante */
