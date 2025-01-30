@@ -1,3 +1,6 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
 
 main{
     background-color: lavender;
@@ -38,4 +41,12 @@ span, p {
     width: 50%;
     height: auto;
     object-fit: cover;
+}
+
+
+/** Description Box **/
+
+.descriptionItem{
+    align-items: center;
+    gap: 1rem;
 }
