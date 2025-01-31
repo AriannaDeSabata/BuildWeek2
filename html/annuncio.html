@@ -32,19 +32,19 @@
             <div class="gallery row">
                 <div class="mainImage col-md-6">
                     <img src="../assets/1.webp" alt="" class="img-fluid">
-                </div>  
+                </div>
                 <div class="otherImages col-md-6">
                     <div class="row">
                         <div class="col-6"><img class="othersImage img-fluid" src="../assets/2.webp" alt=""></div>
-                    <div class="col-6"><img class="othersImage img-fluid" src="../assets/3.webp" alt=""></div>
-                    <div class="col-6"><img class="othersImage img-fluid" src="../assets/4.webp" alt=""></div>
-                    <div class="col-6"><img class="othersImage img-fluid" src="../assets/5.webp" alt=""></div>
-                    
-                </div> 
+                        <div class="col-6"><img class="othersImage img-fluid" src="../assets/3.webp" alt=""></div>
+                        <div class="col-6"><img class="othersImage img-fluid" src="../assets/4.webp" alt=""></div>
+                        <div class="col-6"><img class="othersImage img-fluid" src="../assets/5.webp" alt=""></div>
+
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="mainContent" class="row py-4" >
+        <section id="mainContent" class="row py-4">
             <div class="descriptionBox col-md-6">
                 <div class="descriptionText">
                     <h2 class="h4">House - Host: Erica</h2>
@@ -99,167 +99,108 @@
                     </div>
                 </div>
             </div>
-            <div id="bookingForm" class="col-md-4">
+            <div id="bookingForm" class="col-md-5">
                 <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5>Aggiungi le date per conoscere i prezzi</h5>
+                        <div class="row g-2">
+                            <div class="col-md">
+                                <form class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInputGrid"
+                                        placeholder="name@example.com" value="mdo@example.com">
+                                    <label for="floatingInputGrid">Email address</label>
+                                </form>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelectGrid">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelectGrid">Works with selects</label>
+                                </div>
+                            </div>
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelectGrid">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <label for="floatingSelectGrid">Works with selects</label>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">controlla la disponibilità</a>
                     </div>
-                  </div>
+                </div>
             </div>
         </section>
         <section id="reviewForm">
             <form class="row g-3">
                 <div class="col-md-6">
                     <label for="name" class="form-label">name</label>
-                    <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Enter your name">
+                    <input type="name" class="form-control" id="name" aria-describedby="name"
+                        placeholder="Enter your name">
                 </div>
                 <div class="col-md-6">
                     <label for="rating" class="form-label">rating</label>
                     <select class="form-select form-select-sm" aria-label="Small select">
-                      <option value="1" selected>*</option>
-                      <option value="2">**</option>
-                      <option value="3">***</option>
-                      <option value="4">****</option>
-                      <option value="5">*****</option>
+                        <option value="1" selected>*</option>
+                        <option value="2">**</option>
+                        <option value="3">***</option>
+                        <option value="4">****</option>
+                        <option value="5">*****</option>
                     </select>
                 </div>
                 <div class="col-12">
-                  <label for="review" class="form-label">review</label>
-                  <textarea class="form-control" id="review" rows="6" placeholder="Type in yout review"></textarea>
+                    <label for="review" class="form-label">review</label>
+                    <textarea class="form-control" id="review" rows="6" placeholder="Type in yout review"></textarea>
                 </div>
                 <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Check me out
-                    </label>
-                  </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
+                    </div>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary">send review</button>
+                    <button type="submit" class="btn btn-primary">send review</button>
                 </div>
-              </form>
+            </form>
         </section>
         <section id="testimonials">
             <div class="row-cols-2">
                 <div class="col">
                     <div class="testimonialCard card">
                         <div class="d-flex">
-                        <img src="../assets/propic.png" class="card-img-top" alt="...">
-                        <div class="d-flex">
-                        <h5 class="card-title">noemi</h5>
-                          <p class="reviewDate">Jan 2021</p>
-                        </div>
+                            <img src="../assets/propic.png" class="card-img-top" alt="...">
+                            <div class="d-flex">
+                                <h5 class="card-title">noemi</h5>
+                                <p class="reviewDate">Jan 2021</p>
+                            </div>
                         </div>
                         <div class="card-body">
-                          <p class="card-text">Contrary to other reviews, I was cold and couldn't figure out how to turn on the heating... Otherwise amazing house.</p>
+                            <p class="card-text">Contrary to other reviews, I was cold and couldn't figure out how to
+                                turn on the heating... Otherwise amazing house.</p>
                         </div>
-                      </div>
-                    
+                    </div>
+
                 </div>
-                
+
             </div>
         </section>
-    </div>
+        </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="../js/annuncio.js"></script>
+    <script src="../script/load_common_files.js"></script>
 </body>
-<footer >
-    <div class="container ">
-        <div class="row mt-5 d-flex justify-content-center gy-2">
-            <div class="col-6 col-md-3">
-                <ul>
-                    <li>Assistance</li>
-                    <li>
-                        <a href="#">Help Center</a>
-                    </li>
-                    <li>
-                        <a href="#">Air Cover</a>
-                    </li>
-                    <li>
-                        <a href="#">Anti-discrimination</a>
-                    </li>
-                    <li>
-                        <a href="#">Disability Support</a>
-                    </li>
-                    <li>
-                        <a href="#">Cancellation Options</a>
-                    </li>
-                    <li>
-                        <a href="#">Report a problem in the neighborhood</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-6 col-md-3">
-                <ul>
-                    <li>Host</li>
-                    <li>
-                        <a href="#">Open an Airbnb</a>
-                    </li>
-                    <li>
-                        <a href="#">AirCover for Hosts</a>
-                    </li>
-                    <li>
-                        <a href="#">Host Resources</a>
-                    </li>
-                    <li>
-                        <a href="#">Community Forum</a>
-                    </li>
-                    <li>
-                        <a href="#">Host Responsibly</a>
-                    </li>
-                    <li>
-                        <a href="#">Attend a free hospitality class</a>
-                    </li>
-                    <li>
-                        <a href="#">Find a co-host</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-3">
-                <ul>
-                    <li>Airbnb</li>
-                    <li>
-                        <a href="#">Newsroom</a>
-                    </li>
-                    <li>
-                        <a href="#">New Features</a>
-                    </li>
-                    <li>
-                        <a href="#">Job opportunities</a>
-                    </li>
-                    <li>
-                        <a href="#">Investors</a>
-                    </li>
-                    <li>
-                        <a href="#">Gift Cards</a>
-                    </li>
-                    <li>
-                        <a href="#">Stays with Airbnb.org</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-9">
-                <div class="d-flex justify-content-between align-items-center">
-                    <p>© 2025 Airbnb,Inc &middot; Terms &middot; SitMap &middot; Company details </p>
-                    <div class="d-flex gap-3 align-items-center">
-                        <i class="bi bi-globe"></i>
-                        <p>Italian(IT)</p>
-                        <span>€ EUR</span>
-                        <i class="bi bi-facebook"></i>
-                        <i class="bi bi-twitter"></i>
-                        <i class="bi bi-instagram"></i>
-                    </div>
-                </div>
+<footer id="footer_part"></footer>
 
-            </div>
-        </div>
-    </div>
-</footer>
-    </html>
+</html>
