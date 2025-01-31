@@ -4,7 +4,7 @@ const loadHeader = () => {
         return res.text()
     })
     .then(data => {
-        document.querySelector('#header__part').innerHTML = data;
+        document.querySelector('#headerPart').innerHTML = data;
     })
     console.log('header');
 }
@@ -16,7 +16,7 @@ const loadFooter = () => {
         return res.text();
     })
     .then(data => {
-        document.querySelector('#footer__part').innerHTML = data ; 
+        document.querySelector('#footerPart').innerHTML = data ; 
     })
     console.log('footer');
 }
