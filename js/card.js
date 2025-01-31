@@ -133,7 +133,7 @@
 
                 <div id="${carouselId}" class="carousel slide rounded overflow-hidden mb-3" data-bs-ride="false">
                     
-                    <!-- Indicatori (puntini) -->
+                    <!-- Indicatori (puntini in basso alla card) -->
                     <div class="carousel-indicators">
                         ${apartment.images.map((image, imgIndex) => `
                         <button type="button" data-bs-target="#${carouselId}" data-bs-slide-to="${imgIndex}" class="${imgIndex === 0 ? "active" : ""}" aria-label="Slide ${imgIndex + 1}"></button>`).join('')}
