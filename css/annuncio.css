@@ -2,9 +2,9 @@
 
 
 
-main{
+/*main{
     background-color: lavender;
-}
+}*/
 
 /*Design System */
 
@@ -20,6 +20,29 @@ span, p {
     justify-content: center;
     /*margin-top: 2rem;
     margin-bottom: 2rem;*/
+}
+
+.topInfo{
+    padding: 0.5em 1rem;
+}
+
+.topInfo .h4{
+    margin: 0;
+}
+
+.topInfo .share{
+    gap: 1rem;
+}
+
+.topInfo span{
+    font-size:0.7rem;
+}
+
+.topInfo .share i{
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 0.875rem;
 }
 
 .gallery{
@@ -79,10 +102,14 @@ span, p {
 }
 
 #bookingForm .card{
-    border: none;
+    position: sticky;
+    top: 0.5rem;
+    z-index: 100;
+    /*border: none;*/
     border-radius: 1.1rem;
+    flex-direction: column;
+    gap: 1.2rem; 
+    box-shadow: 0px 0px 24px 8px rgba(0,0,0,0.2);
 }
 
-#bookingForm .btn{
-    --bs-btn-bg: linear-gradient(to right, #E61E4D 0%, #E31C5F 50%, #D70466 100%);
-}
+#bookingForm .btn{}
