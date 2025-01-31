@@ -214,23 +214,22 @@ document.addEventListener("DOMContentLoaded", function () {
     // Seleziona tutti gli elementi che hanno la classe "carousel"
     var carousels = document.querySelectorAll(".carousel");
 
-    // Itera su ogni carousel trovato nella pagina
+    // itera su ogni carousel trovato nella pagina
     carousels.forEach(function (carousel) {
         // Seleziona tutti i bottoni (indicatori) del carousel corrente
         var indicators = carousel.querySelectorAll(".carousel-indicators button");
 
-        // Aggiunge un listener per intercettare il cambio di slide nel carousel
+        // aggiunge un listener per intercettare il cambio di slide nel carousel
         carousel.addEventListener("slide.bs.carousel", function (event) {
-            // Ottiene l'indice della slide che sta per diventare attiva
+            // ottiene l'indice della slide che sta per diventare attiva
             var activeIndex = event.to;
 
-            // Itera su tutti i bottoni indicatori per aggiornarne la dimensione
+            // itera su tutti i bottoni indicatori per aggiornarne la dimensione
             indicators.forEach((btn, index) => {
-                // Rimuove le classi "small-75" e "small-50" da tutti i bottoni
-                // per evitare che mantengano dimensioni errate dopo il cambio di slide
+                // rimuove le classi "small-75" e "small-50" da tutti i bottoni per evitare che mantengano dimensioni errate dopo il cambio di slide
                 btn.classList.remove("small-75", "small-50");
 
-                // Calcola la distanza tra il puntino attuale e quello attivo
+                // calcola la distanza tra il puntino attuale e quello attivo
                 var distance = Math.abs(activeIndex - index);
 
                 // Se la distanza dal puntino attivo è esattamente 2, riduce la dimensione del 75%

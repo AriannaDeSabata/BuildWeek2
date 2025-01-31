@@ -40,15 +40,21 @@ body {
     background-color: white;
 }
 
-.like {
-    padding: 10px;
-    /* Aggiunge spazio attorno al pulsante */
-    cursor: pointer;
-    /* Assicura un'area cliccabile chiara */
-    z-index: 2;
-    /* Assicura che sia sopra gli altri elementi */
+.carousel-indicators button.small-75 {
+    transform: scale(0.75);
 }
 
+.carousel-indicators button.small-50 {
+    transform: scale(0.5);
+}
+/* cuore header card */
+.like {
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    /* assicura che sia sopra gli altri elementi */
+}
+/* indicatori laterali */
 .carousel-control-next,
 .carousel-control-prev {
     width: 50px;
@@ -77,10 +83,3 @@ body {
 
 
 
-.carousel-indicators button.small-75 {
-    transform: scale(0.75);
-}
-
-.carousel-indicators button.small-50 {
-    transform: scale(0.5);
-}
