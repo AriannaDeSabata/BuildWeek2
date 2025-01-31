@@ -55,7 +55,12 @@ span, p {
 }
 
 
-/** Description Box **/
+
+/** MAINC ONTENT **/
+
+#mainContent{
+    justify-content: space-between;
+}
 
 .descriptionFeatures{
     display: flex;
@@ -71,4 +76,13 @@ span, p {
 
 .descriptionItem i{
     font-size: 1.3rem;
+}
+
+#bookingForm .card{
+    border: none;
+    border-radius: 1.1rem;
+}
+
+#bookingForm .btn{
+    --bs-btn-bg: linear-gradient(to right, #E61E4D 0%, #E31C5F 50%, #D70466 100%);
 }
