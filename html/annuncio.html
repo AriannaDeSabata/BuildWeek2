@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annuncio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/annuncio.css">
+
+</head>
+
+<body>
+    <header id="headerPart"></header>
+    <main class="container mt-4 px-5 px-md-3 px-lg-5">
+        <section id="hero" class="row">
+            <div class="topInfo d-flex justify-content-between align-items-end">
+                <div class="title">
+                    <h1 class="h4">Blarmor home</h1>
+                    <span class="rating">4,6 ratings</span>
+                    <span> - </span>
+                    <span class="category">inverness</span>
+                </div>
+                <div class="share d-flex">
+                    <i class="bi bi-upload">Share</i>
+                    <i class="bi bi-heart">Save</i>
+                </div>
+            </div>
+            <div class="gallery row">
+                <div class="mainImage col-md-6">
+                    <img src="../assets/1.webp" alt="" class="img-fluid">
+                </div>
+                <div class="otherImages col-md-6">
+                    <div class="row">
+                        <div class="col-6"><img class="othersImage img-fluid" src="../assets/2.webp" alt=""></div>
+                        <div class="col-6"><img class="othersImage img-fluid" src="../assets/3.webp" alt=""></div>
+                        <div class="col-6"><img class="othersImage img-fluid" src="../assets/4.webp" alt=""></div>
+                        <div class="col-6"><img class="othersImage img-fluid" src="../assets/5.webp" alt=""></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mainContent" class="row py-4">
+            <div class="descriptionBox col-md-6">
+                <div class="descriptionText">
+                    <h2 class="h4">House - Host: Erica</h2>
+                    <p>3 rooms - Perfect place to visit the Loch Ness and go looking for Nessie.</p>
+                    <a href="">Show host details</a>
+                </div>
+                <div class="descriptionFeatures py-4">
+                    <div class="d-flex descriptionItem"> <!-- item 1 -->
+                        <div>
+                            <i class="bi bi-house-door"></i>
+                        </div>
+                        <div>
+                            <h6>house</h6>
+                            <p>you will have the whole premise for you</p>
+                        </div>
+                    </div>
+                    <div class="d-flex descriptionItem"> <!-- item 2 -->
+                        <div>
+                            <i class="bi bi-droplet-half"></i>
+                        </div>
+                        <div>
+                            <h6>advanced cleaning methods</h6>
+                            <p>The host is committeing to our 5-step cleaning process</p>
+                        </div>
+                    </div>
+                    <div class="d-flex descriptionItem"> <!-- item 3 -->
+                        <div>
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div>
+                            <h6>Inverness</h6>
+                            <p>5 Kilmore Rd</p>
+                        </div>
+                    </div>
+                    <div class="d-flex descriptionItem"> <!-- item 4 -->
+                        <div>
+                            <i class="bi bi-calendar3"></i>
+                        </div>
+                        <div>
+                            <h6>Cancellation terms and fees</h6>
+                            <p>Add your travel dates to know details about cancellation fees and terms</p>
+                        </div>
+                    </div>
+                    <div class="d-flex descriptionItem"> <!-- item 5 -->
+                        <div>
+                            <i class="bi bi-book"></i>
+                        </div>
+                        <div>
+                            <h6>rules of the house</h6>
+                            <p>It's forbidden to host parties, bring animals and smoke</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bookingForm" class="col-md-5">
+                <div class="card">
+                    <div class="card-body d-flex">
+                        <h5>Aggiungi le date per conoscere i prezzi</h5>
+                        <div class="row g-0">
+                            <div id="checkIn" class="col-6">
+                                <form class="form-floating">
+                                    <input type="date" class="form-control" id="floatingInputGrid"
+                                        placeholder="__/__/___">
+                                    <label for="floatingInputGrid">check-in</label>
+                                </form>
+                            </div>
+                            <div id="checkOut" class="col-6">
+                                <form class="form-floating">
+                                    <input type="date" class="form-control" id="floatingInputGrid"
+                                        placeholder="__/__/___">
+                                    <label for="floatingInputGrid">check-out</label>
+                                </form>
+                            </div>
+                            <div id="guests" class="form-floating">
+                                <select class="form-select" id="floatingSelectGrid">
+                                    <option value="1" selected>1 ospite</option>
+                                    <option value="adulti">adulti</option>
+                                    <option value="bambini">bambini</option>
+                                    <option value="neonati">neonati</option>
+                                    <option value="animali domestici">animali domestici</option>
+                                </select>
+                                <label for="floatingSelectGrid">ospiti</label>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Controlla la disponibilità</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reviewForm">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">name</label>
+                    <input type="name" class="form-control" id="name" aria-describedby="name"
+                        placeholder="Enter your name">
+                </div>
+                <div class="col-md-6">
+                    <label for="rating" class="form-label">rating</label>
+                    <select class="form-select form-select-sm" aria-label="Small select">
+                        <option value="1" selected>*</option>
+                        <option value="2">**</option>
+                        <option value="3">***</option>
+                        <option value="4">****</option>
+                        <option value="5">*****</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="review" class="form-label">review</label>
+                    <textarea class="form-control" id="review" rows="6" placeholder="Type in yout review"></textarea>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">send review</button>
+                </div>
+            </form>
+        </section>
+        <section id="testimonials">
+            <div class="row-cols-2">
+                <div class="col">
+                    <div class="testimonialCard card">
+                        <div class="d-flex">
+                            <img src="../assets/propic.png" class="card-img-top" alt="...">
+                            <div class="d-flex">
+                                <h5 class="card-title">noemi</h5>
+                                <p class="reviewDate">Jan 2021</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Contrary to other reviews, I was cold and couldn't figure out how to
+                                turn on the heating... Otherwise amazing house.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        </div>
+    </main>
+<footer id="footerPart"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../js/annuncio.js"></script>
+    <script src="../js/load_common_files.js"></script>
+</body>
+
+    </html>
