@@ -16,7 +16,7 @@ h4{
  }  
 
 
-h6{
+h6c{
     font-weight: 600; 
  }
 
@@ -53,6 +53,15 @@ a{
 
 
 
+footer{
+    border-top: 0.5px solid #aaaaaa;
+    background-color: #F7F7F7;
+    width: 100%;
+}
+
+footer > div{
+    border-top: none;
+}
 
  
 footer p{
@@ -65,15 +74,40 @@ footer ul{
 footer li{
     list-style: none;
     font-size: 0.7em;
-    line-height: 2em;
+    line-height: 2.5em;
 }
 
 footer li:first-child{
-font-weight: bold;
+    font-weight: bold;
 }
 
-footer div.row div.col-9{
+.contFooter{
     padding: 15px 0;
     border-top: 1px solid #aaaaaa;
 }
 
+footer .bi{
+    font-size: 0.9em;
+}
+
+@media screen and (max-width:1022px) {
+    .contFooter > div {
+        flex-wrap: wrap-reverse;
+
+    }
+    .contFooter > div .bi:nth-child(1n+3){
+        display: none;
+    }
+    footer .row >*{
+        padding: 0;
+    }
+    footer .row > div:nth-child(1n+2){
+        border-top: 1px solid #aaaaaa;
+    }
+}
+
+@media screen and (min-width:427px) and (max-width:770px) {
+    .contFooter > div {
+        flex-direction: column-reverse;
+    }
+}
