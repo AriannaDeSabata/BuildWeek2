@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family:  "Roboto", Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 3em;
+    color: #fff;
+}
+
+
+/* h4 se usato come titolo di annuncio */
+h4{ 
+    font-weight: 600;   
+ }  
+
+
+h6{
+    font-weight: 600;
+ }
+
+p{
+    font-size: 0.8em;
+
+ }
+
+ p.infoCard{
+    color:#7A7A7A;
+ }
+
+
+ /* non serve la classe .infoCard, se la mettiamo per ogni paragrafo dobbiamo inserirla, invece con .card p   
+ scriviamo meno codice, quindi sono da rimuovere tutte le classi dai paragrafi della card */
+.card p {       
+    font-size: 0.75em;
+    margin: 0;
+ }
+
+ p.button{
+    font-size: 1em;
+    font-weight: 500;
+ }
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-primary{
+   background-color: #E41D56;
+   border: none;
+   flex-grow: 2;
+   display: inline-flex;
+   justify-content: center;
+   border-radius: 0.875rem;
+   color: white;
+   padding: 1rem 1.5rem;
+   transition: background-color 0.6s ease;
+   font-size: 1.1rem;
+   font-weight: 400;
+}
+
+.btn-primary:hover{
+    background-color: #D70466;
+}
+
+
+/*colore Airbnb---> #E41D56 */
+
+
+
+
+footer{
+    border-top: 0.5px solid #aaaaaa;
+    background-color: #F7F7F7;
+    width: 100%;
+}
+
+footer > div{
+    border-top: none;
+}
+
+ 
+footer p{
+    margin: 0;
+}
+
+footer ul{
+    padding: 0;
+}
+footer li{
+    list-style: none;
+    font-size: 0.7em;
+    line-height: 2.5em;
+}
+
+footer li:first-child{
+    font-weight: bold;
+}
+
+.contFooter{
+    padding: 15px 0;
+    border-top: 1px solid #aaaaaa;
+}
+
+footer .bi{
+    font-size: 0.9em;
+}
+
+@media screen and (max-width:1022px) {
+    .contFooter > div {
+        flex-wrap: wrap-reverse;
+
+    }
+    .contFooter > div .bi:nth-child(1n+3){
+        display: none;
+    }
+    footer .row >*{
+        padding: 0;
+    }
+    footer .row > div:nth-child(1n+2){
+        border-top: 1px solid #aaaaaa;
+    }
+}
+
+@media screen and (min-width:427px) and (max-width:770px) {
+    .contFooter > div {
+        flex-direction: column-reverse;
+    }
+}
