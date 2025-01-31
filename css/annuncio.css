@@ -92,6 +92,10 @@ span, p {
     gap: 1.3rem;
 }
 
+.descriptionItem h6{
+    margin-bottom: 0.3rem;
+}
+
 .descriptionItem{
     align-items: center;
     gap: 1rem;
@@ -112,6 +116,35 @@ span, p {
     box-shadow: 0px 0px 24px 8px rgba(0,0,0,0.2);
 }
 
+#bookingForm .card-body {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.5rem;
+}
+
 #bookingForm h5{
     font-weight: 300;
+}
+
+#checkIn input{
+    border-radius: var(--bs-border-radius) 0 0 0;
+    border-right: 0.5px;
+}
+
+#checkOut input{
+border-radius: 0 var(--bs-border-radius) 0 0;
+}
+
+#guests select{
+    border-radius: 0 0 var(--bs-border-radius) var(--bs-border-radius);
+    }
+
+#checkIn input, #checkOut input {
+    border-bottom: 0.5px;
+}
+
+#checkIn label, #checkOut label, #guests label {
+    text-transform: uppercase;
+    color: black!important;
+    
 }
