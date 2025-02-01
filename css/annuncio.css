@@ -148,3 +148,9 @@ border-radius: 0 var(--bs-border-radius) 0 0;
     color: black!important;
     
 }
+
+/* FORM **/
+
+#reviewForm{
+    padding: 2rem 0;
+}
