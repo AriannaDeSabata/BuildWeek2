@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cartellaCss/bootstrap.css">
-    <title>airbnb</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cartellaCss/bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="cartellaCss/style.css">
+  <title>airbnb</title>
 </head>
 
 
 
 <body>
+
+
+  <main class="px-4 px-md-0 px-lg-4">
+
+
+    <section class="container text-center searchBarSection">
+
+      <div class="row justify-content-center align-items-center">
+        
+        <div class="barSection col-12 col-md-4 col-lg-4 d-block text-start">
+          <h6>Location</h6>
+          <p>Where are you going?</p>
+        </div>
+
+        <div class="research col-12 col-md-2 col-lg-2 d-none d-sm-none d-md-block text-start">
+          <h6>Check-in</h6>
+          <p>gg/mm/aa</p>
+          <i id="xv" class="bi bi-calendar"></i>
+        </div>
+
+        <div class="research col-12 col-md-2 col-lg-2 d-none d-sm-none d-md-block text-start rem">
+          <h6>Check-out</h6>
+          <p>gg/mm/aa</p>
+          <i id="xy" class="bi bi-calendar"></i>
+        </div>
+
+        <div class="lastBarSection col-12 col-md-4 col-lg-4 d-none d-sm-none d-md-block text-start dex">
+          <h6>Guests</h6>
+          <p>Add guests</p>
+          <i class="bi bi-search"></i>
+        </div>
+
+      </div>
+
+
+    </section>
 
 
     
@@ -19,15 +58,194 @@
 
 
 
+    <section id="textHome">
+
+
+
+      <h1>Go <br>Near</h1>
+      <button type="button" class="btn btn-light btn-sm">Explore nearby stays</button>
+
+
+
+    </section>
+
+
+
+  </main>
+
+
+
+  <aside class="container text-start px-4 px-md-0 px-lg-4">
+
+    <div class="row gy-3">
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="immagini/edimburgo.jpg" class="img-fluid rounded-start photo" alt="edimburgo">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">Edimburgo</h6>
+                <p class="card-text">2 hrs flight</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="immagini/genova.jpg" class="img-fluid rounded-start photo" alt="genova">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">Genova</h6>
+                <p class="card-text">15 mins drive</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="immagini/kirkwall.jpg" class="img-fluid rounded-start photo" alt="kirkwall">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">kirkwall</h6>
+                <p class="card-text">1 hr drive</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="immagini/milano.jpg" class="img-fluid rounded-start photo" alt="milano">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">Milano</h6>
+                <p class="card-text">1,5 hrs drive</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="immagini/monte-carlo-700x445-min.jpg" class="img-fluid rounded-start photo" alt="montecarlo">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">Montecarlo</h6>
+                <p class="card-text">3 hrs flight</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="immagini/nordkapp.jpg" class="img-fluid rounded-start photo" alt="nordkapp">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">Nordkapp</h6>
+                <p class="card-text">2,5 hrs flight</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="immagini/rapallo.jpg" class="img-fluid rounded-start photo" alt="rapallo">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">Rapallo</h6>
+                <p class="card-text">3 hrs drive</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="immagini/Stoccolma20-1024x683.jpg" class="img-fluid rounded-start photo" alt="stoccolma">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title">Stoccolma</h6>
+                <p class="card-text">3,5 hrs flight</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </aside>
 
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
-<script src="cartellaJs/bootstrap.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+  <script src="cartellaJs/bootstrap.js"></script>
 
 </body>
+
 </html>
