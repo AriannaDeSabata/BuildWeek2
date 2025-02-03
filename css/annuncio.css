@@ -186,11 +186,12 @@ div#menuGuest{
     display: none;
 }
 
-input[type = number]{
-    width: 20px;
-    background-color: transparent;
-    border: none;
+#menuGuest input[type = number]{
     text-align: center;
+    border: none;
+    width: 50px;
+    background-color: transparent;
+
 }
 
 div#menuGuest > *{
