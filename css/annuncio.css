@@ -116,22 +116,71 @@ span, p {
 border-radius: 0 var(--bs-border-radius) 0 0;
 }
 
-#guests select{
-    border-radius: 0 0 var(--bs-border-radius) var(--bs-border-radius);
-    }
+#checkGuest, #menuGuest{
+    border-radius: 0 0 var(--bs-border-radius) var(--bs-border-radius) ;
+    border: 0.5px solid rgba(128, 128, 128, 0.35);
+
+}
 
 #checkIn input, #checkOut input {
     border-bottom: 0.5px;
 }
 
-#checkIn label, #checkOut label, #guests label {
+#checkIn label, #checkOut label, #checkGuest p:first-child {
     text-transform: uppercase;
     color: black!important;
     
 }
 
+.listGuest button{
+    border: none;
+    background-color: white;
+    font-size: 1.2em;
+}
+div#menuGuest{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+#menuGuest p{
+    margin: 0;
+    font-size: 0.8em;
+}
+#menuGuest input[type = button]{
+    border-radius: 50%;
+    border-color: rgba(128, 128, 128, 0.413);
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+}
 
+.hidden{
+    display: none;
+}
 
+input[type = number]{
+    width: 20px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+div#menuGuest > *{
+    margin-bottom: 10px;
+}
+
+#menuGuest > div.d-flex p:first-child{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#menuGuest a{
+    text-decoration: underline;
+}
 
 #testimonials .card{
     height: 130px;

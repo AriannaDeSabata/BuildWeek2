@@ -101,7 +101,7 @@
             <div id="bookingForm" class="col-md-5">
                 <div class="card">
                     <div class="card-body d-flex">
-                        <h5>Aggiungi le date per conoscere i prezzi</h5>
+                        <h5>Add dates to see the prices</h5>
                         <div class="row g-0">
                             <div id="checkIn" class="col-6">
                                 <form class="form-floating">
@@ -117,25 +117,83 @@
                                     <label for="floatingInputGrid">check-out</label>
                                 </form>
                             </div>
-                            <div id="guests" class="form-floating">
-                                <select class="form-select" id="floatingSelectGrid">
-                                    <option value="1" selected>1 ospite</option>
-                                    <option value="adulti">adulti</option>
-                                    <option value="bambini">bambini</option>
-                                    <option value="neonati">neonati</option>
-                                    <option value="animali domestici">animali domestici</option>
-                                </select>
-                                <label for="floatingSelectGrid">ospiti</label>
+                            <div id="checkGuest" class="px-3 py-2">
+                                <div class="d-flex  justify-content-between">
+                                    <div class="d-flex flex-column">
+                                        <p>Guest</p>
+                                        <div class="d-flex gap-2 ">
+                                            <p id="contGuest">1</p>
+                                            <p>Guest</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="listGuest d-flex align-items-center">
+                                        <button>
+                                            <i class="bi bi-arrow-down-short"></i>
+                                        </button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div id="menuGuest" class="p-3 hidden col-12">
+                                <div class="d-flex justify-content-between align-items-center" >
+                                    <div>
+                                        <p>Adults</p>
+                                        <p>Over 13 years old</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="button" value="-" class="less" >
+                                        <input type="number" value="1" disabled >
+                                        <input type="button" value="+" class="plus">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <p>Children</p>
+                                        <p>Ages 2-12</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="button" value="-" class="less" >
+                                        <input type="number" value="0" disabled>
+                                        <input type="button" value="+" class="plus">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <p>NewBorns</p>
+                                        <p>Up to 2 years</p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="button" value="-" class="less" >
+                                        <input type="number" value="0" disabled>
+                                        <input type="button" value="+" class="plus">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <p>Pets</p>
+                                        <p><a href="#">Are you travelling with a service animal?</a></p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="button" value="-" class="less" >
+                                        <input type="number" value="0" disabled>
+                                        <input type="button" value="+" class="plus">
+                                    </div>
+                                </div>
+                    
                             </div>
                         </div>
-                        <a href="#" class="btn btn-primary">Controlla la disponibilità</a>
+                        <a href="#" class="btn btn-primary">Book</a>
                     </div>
                 </div>
             </div>
         </section>
         <section id="reviewForm">
             <form class="row g-3">
-                <div class="col-md-6">
+                <div class=" col-md-6">
                     <label for="name" class="form-label">name</label>
                     <input type="name" class="form-control" id="name" aria-describedby="name"
                         placeholder="Enter your name">
@@ -169,7 +227,7 @@
         </section>
         <section id="testimonials" class="my-5">
             <div class="row ">
-                <div class="col-6 ">
+                <div class="col-12 col-6 ">
                     <div class=" card  pt-3">
                         <div class="d-flex align-items-center">
                             <img src="../assets/propic.png" class="card-img-top" alt="...">
@@ -185,8 +243,8 @@
                     </div>
 
                 </div>
-                <div class="col-6">
-                    <div class="card  px-4 pt-3">
+                <div class="col-12 col-6">
+                    <div class="card  pt-4 pt-md-3">
                         <div class="d-flex align-items-center">
                             <img src="../assets/propic.png"  alt="...">
                             <div class="ms-2 ">
