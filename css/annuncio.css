@@ -1,10 +1,13 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 
+@media screen and (min-width: 992px) {
+    main{
+        width: 80%;
+        /*background-color: lavender;*/
+    } 
+}
 
-/*main{
-    background-color: lavender;
-}*/
 
 /*Design System */
 
@@ -73,6 +76,16 @@ span, p {
     gap: 1.3rem;
 }
 
+.descriptionText h4{
+    margin: 0;
+}
+
+.descriptionText a{
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: 700;
+}
+
 .descriptionItem h6{
     margin-bottom: 0.3rem;
 }
@@ -131,6 +144,17 @@ border-radius: 0 var(--bs-border-radius) 0 0;
     color: black!important;
     
 }
+
+/* FORM **/
+
+#reviewForm{
+    padding: 2rem 0;
+}
+
+#reviewForm label {
+    text-transform: capitalize;
+}
+
 
 .listGuest button{
     border: none;
