@@ -58,6 +58,18 @@ body {
 .carousel-control-next,
 .carousel-control-prev {
     width: 50px;
+    opacity: 0.5;  /* Imposta un'opacità iniziale */
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    
+}
+
+.carousel-control-next:focus .carousel-control-next-icon,
+.carousel-control-prev:focus .carousel-control-prev-icon,
+.carousel-control-next:active .carousel-control-next-icon,
+.carousel-control-prev:active .carousel-control-prev-icon {
+    opacity: 0.5;  /* Ritorna all'opacità iniziale */
+    background-color: white; /* Ritorna al colore originale */
+    border: 6px solid white;
 }
 
 .carousel-control-next-icon,
@@ -71,6 +83,7 @@ body {
     background-color: #fff;
     border-radius: 50%;
     border: 6px solid #fff;
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 /* modifica al colore immagine svg freccia destra */
 .carousel-control-next-icon {
