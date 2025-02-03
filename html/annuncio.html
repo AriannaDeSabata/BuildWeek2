@@ -28,22 +28,22 @@
                     <i class="bi bi-heart">Save</i>
                 </div>
             </div>
-            <div class="gallery row">
+            <div class="gallery row gx-3 gy-3 gy-md-0 p-0">
                 <div class="mainImage col-md-6">
                     <img src="../assets/1.webp" alt="" class="img-fluid">
                 </div>
-                <div class="otherImages col-md-6">
-                    <div class="row">
-                        <div class="col-6"><img class="othersImage img-fluid" src="../assets/2.webp" alt=""></div>
-                        <div class="col-6"><img class="othersImage img-fluid" src="../assets/3.webp" alt=""></div>
-                        <div class="col-6"><img class="othersImage img-fluid" src="../assets/4.webp" alt=""></div>
-                        <div class="col-6"><img class="othersImage img-fluid" src="../assets/5.webp" alt=""></div>
+                <div class="othersImage col-md-6">
+                    <div class="row g-3">
+                        <div class="col-6 "><img class="img-fluid" src="../assets/2.webp" alt=""></div>
+                        <div class="col-6"><img class="img-fluid" src="../assets/3.webp" alt=""></div>
+                        <div class="col-6"><img class="img-fluid" src="../assets/4.webp" alt=""></div>
+                        <div class="col-6"><img class="img-fluid" src="../assets/5.webp" alt=""></div>
 
                     </div>
                 </div>
             </div>
         </section>
-        <section id="mainContent" class="row py-4">
+        <section id="mainContent" class="row py-4 mt-4">
             <div class="descriptionBox col-md-6">
                 <div class="descriptionText">
                     <h2 class="h4">House - Host: Erica</h2>
@@ -135,12 +135,12 @@
         </section>
         <section id="reviewForm">
             <form class="row g-3">
-                <div class="col-md-6">
+                <div class="col-md-6 lg-3">
                     <label for="name" class="form-label">name</label>
                     <input type="name" class="form-control" id="name" aria-describedby="name"
                         placeholder="Enter your name">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <label for="rating" class="form-label">rating</label>
                     <select class="form-select form-select-sm" aria-label="Small select">
                         <option value="1" selected>*</option>
@@ -150,11 +150,11 @@
                         <option value="5">*****</option>
                     </select>
                 </div>
-                <div class="col-12">
+                <div class="col-9">
                     <label for="review" class="form-label">review</label>
                     <textarea class="form-control" id="review" rows="6" placeholder="Type in yout review"></textarea>
                 </div>
-                <div class="col-12">
+                <div class="col-9">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="gridCheck">
                         <label class="form-check-label" for="gridCheck">
@@ -162,19 +162,19 @@
                         </label>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-9">
                     <button type="submit" class="btn btn-primary">send review</button>
                 </div>
             </form>
         </section>
-        <section id="testimonials">
-            <div class="row-cols-2">
-                <div class="col">
-                    <div class="testimonialCard card">
-                        <div class="d-flex">
+        <section id="testimonials" class="my-5">
+            <div class="row ">
+                <div class="col-6 ">
+                    <div class=" card  pt-3">
+                        <div class="d-flex align-items-center">
                             <img src="../assets/propic.png" class="card-img-top" alt="...">
-                            <div class="d-flex">
-                                <h5 class="card-title">noemi</h5>
+                            <div class="ms-2">
+                                <h6>Noemi</h6>
                                 <p class="reviewDate">Jan 2021</p>
                             </div>
                         </div>
@@ -185,7 +185,23 @@
                     </div>
 
                 </div>
+                <div class="col-6">
+                    <div class="card  px-4 pt-3">
+                        <div class="d-flex align-items-center">
+                            <img src="../assets/propic.png"  alt="...">
+                            <div class="ms-2 ">
+                                <h6>Enrico</h6>
+                                <p class="reviewDate">Jan 2021</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Amazing place. I've been here will my daugther to take pictures and we were not disappointed.
+                            </p>
+                        </div>
+                    </div>
 
+                </div>
             </div>
         </section>
         </div>

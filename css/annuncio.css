@@ -45,36 +45,16 @@ span, p {
     font-size: 0.875rem;
 }
 
-.gallery{
-   /* gap: 0.25rem;*/
-}
-
-.mainImage, .otherImages {
-    overflow: hidden;
-    padding: 0;
-}
 
 .mainImage img{
     object-fit: cover;
     height: 100%;
 }
 
-/*.otherImages{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-}*/
 
-.otherImages .row .col-6 {
-    padding: 0;
-}
-
-.otherImages img{
-    height: auto;
-    object-fit: cover;
+.othersImage img{
     aspect-ratio: 1 / 1;
-    padding: 0;
-    height: auto;
+    object-fit: cover;
 }
 
 
@@ -83,6 +63,7 @@ span, p {
 
 #mainContent{
     justify-content: space-between;
+
 }
 
 .descriptionFeatures{
@@ -148,3 +129,36 @@ border-radius: 0 var(--bs-border-radius) 0 0;
     color: black!important;
     
 }
+
+/* FORM **/
+
+#reviewForm{
+    padding: 2rem 0;
+}
+
+
+
+
+#testimonials .card{
+    height: 130px;
+    border: none;
+}
+
+#testimonials img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+
+}
+
+#testimonials .card-body{
+    padding: 10px 0;
+    font-size: 1.2em;
+}
+
+#testimonials .card h6{
+    font-weight: 700;
+    margin: 0;
+
+}   
+
