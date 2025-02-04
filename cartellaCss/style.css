@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Poppins", Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 4em;
+    color: #fff;
+    line-height: 48px;
+    
+    
+}
+
+
+/* h4 se usato come titolo di annuncio */
+h4{ 
+    font-weight: 600;   
+ }  
+
+
+h6{
+    font-size: 0.8em;
+    font-weight: 600; 
+ }
+
+p{
+    font-size: 0.8em;
+
+ }
+
+ p.infoCard{
+    color:#7A7A7A;
+ }
+
+
+ /* non serve la classe .infoCard, se la mettiamo per ogni paragrafo dobbiamo inserirla, invece con .card p   
+ scriviamo meno codice, quindi sono da rimuovere tutte le classi dai paragrafi della card */
+.card p {       
+    font-size: 0.75em;
+    margin: 0;
+ }
+
+ p.button{
+    font-size: 1em;
+    font-weight: 500;
+ }
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*colore Airbnb---> #E41D56 */
+
+
+
+   
+.container.text-center.searchBarSection{
+    max-width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.row.justify-content-center.align-items-center{
+    height: 100px;
+}
+
+.barSection.col-12.col-md-4.col-lg-4.d-block.text-start{
+    width: 230px;
+    height: 70px;
+    padding-top: 12px;
+    padding-left: 15px;
+    background-color: white;
+    border-right: 1px solid gainsboro
+}
+
+.barSection p{
+    opacity: 0.5;
+}
+
+.research p{
+    opacity: 0.5;
+}
+
+.lastBarSection p{
+    opacity: 0.5;
+}
+
+.research.col-12.col-md-2.col-lg-2.d-none.d-sm-none.d-md-block.text-start{
+    width: 150px;
+    height: 70px;
+    padding-top: 12px;
+    background-color: white;
+    position: relative;
+    border-right: 1px solid gainsboro
+}
+
+.research.col-12.col-md-2.col-lg-2.d-none.d-sm-none.d-md-block.text-start.rem{
+    width: 150px;
+    height: 70px;
+    padding-top: 12px;
+    background-color: white;
+    position: relative;
+    border-right: 1px solid gainsboro
+}
+
+
+
+.lastBarSection.col-12.col-md-4.col-lg-4.d-none.d-sm-none.d-md-block.text-start.dex{
+    width: 230px;
+    height: 70px;
+    padding-top: 12px;
+    padding-left: 15px;
+    background-color: white;
+    position: relative;
+    border-radius: 0px 60px 60px 0px;
+} 
+
+.bi.bi-search {
+   position: absolute;
+   top: 11px;
+   left: 160px;
+   background-color: #E41D56;
+   color: white;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   padding-left: 15px;
+   padding-top: 12px;
+   padding-bottom: 5px;
+}
+
+#xv {
+    position: absolute;
+    bottom: 14px;
+    left: 120px;
+}
+
+#xy {
+    position: absolute;
+    bottom: 14px;
+    left: 120px;
+}
+
+.barSection:first-child{
+    border-radius: 60px 0px 0px 60px;
+}
+
+.barSection:last-child{
+    border-radius: 0px 60px 60px 0px;
+}
+
+
+
+#textHome{
+    width: 100%;
+    height: 850px;
+    background-image: url(../assets/home.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover
+    
+}
+
+.imgHome{
+    width: 100%;
+    height: 700px;
+}
+
+h1:nth-child(1) {
+    padding-top: 380px;
+    padding-left: 10px;
+}
+
+h1:nth-child(2) {
+    padding-left: 10px;
+}  
+
+.btn.btn-light.btn-sm {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+.photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+aside {
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+    
+}
+
+.card.mb-3{
+    width: 250px;
+    border: none;
+}
+
